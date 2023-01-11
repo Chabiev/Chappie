@@ -22,11 +22,7 @@ export class NavComponent implements OnInit{
 
   login(){
     this.accountService.login(this.model).subscribe({
-      complete: () =>this.router.navigateByUrl('/members'),
-      error: error => {console.log(error),
-      this.toastr.error(error.error)}
-      
-      
+      complete: () =>this.router.navigateByUrl('/members')
     })    
   }
 
