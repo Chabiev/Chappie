@@ -5,8 +5,9 @@ namespace API.Data
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly DataContext _context;
         private readonly IMapper _mapper;
+        private readonly DataContext _context;
+        
 
         public UnitOfWork(DataContext context, IMapper mapper)
         {
